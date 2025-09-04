@@ -1,3 +1,4 @@
+#region
 from __future__ import annotations
 
 from functools import wraps
@@ -66,6 +67,7 @@ if TYPE_CHECKING:
     )
 
     from pandas import Series
+#endregion
 
 
 def ravel_compat(meth: F) -> F:
